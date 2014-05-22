@@ -1,6 +1,6 @@
 {
 	"name": "katsana/silverstreet",
-	"description": "Silverstreet SMS API Library for PHP",
+	"description": "SMS API Library for Laravel and PHP",
 	"license": "BSD-2",
 	"authors": [
 		{
