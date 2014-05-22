@@ -15,4 +15,15 @@ class SilverstreetHandler extends Handler implements HandlerInterface
     {
         // TODO: Implement send() method.
     }
+
+    /**
+     * Get delivery status.
+     *
+     * @param  string $response
+     * @return mixed
+     */
+    public function delivery($response)
+    {
+        // TODO: Implement delivery() method.
+    }
 }

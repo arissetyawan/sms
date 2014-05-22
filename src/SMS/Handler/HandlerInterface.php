@@ -7,7 +7,15 @@ interface HandlerInterface
      *
      * @param  string   $to
      * @param  string   $message
-     * @return boolean
+     * @return HandlerInterface
      */
     public function send($to, $message);
+
+    /**
+     * Get delivery status.
+     *
+     * @param  string   $response
+     * @return mixed
+     */
+    public function delivery($response);
 }

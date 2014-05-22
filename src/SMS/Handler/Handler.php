@@ -27,13 +27,4 @@ abstract class Handler
     {
         $this->config = $config;
     }
-
-    /**
-     * Send SMS to a recipient.
-     *
-     * @param  string   $to
-     * @param  string   $message
-     * @return boolean
-     */
-    public abstract function send($to, $message);
 }
