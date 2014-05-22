@@ -1,5 +1,6 @@
 <?php namespace Katsana\SMS;
 
+use BadMethodCallException;
 use Katsana\SMS\Handler\HandlerInterface;
 
 class Provider
@@ -22,14 +23,18 @@ class Provider
     }
 
     /**
-     * Send a SMS.
+     * Passthru to Handler instance.
      *
-     * @param  string   $to
-     * @param  string   $message
-     * @return Handler\HandlerInterface
+     * @param  string   $method
+     * @param  array    $parameters
+     * @return mixed
      */
-    public function send($to, $message)
+    public function __call($method, $parameters)
     {
-        return $this->handler->send($to, $message);
+        if (! method_exists($this->handler, $method)) {
+            throw new BadMethodCallException("Method [{$method}] does not exist.");
+        }
+
+        return call_user_func_array([$this->handler, $method], $parameters);
     }
 }
