@@ -5,11 +5,7 @@ class SilverstreetHandler extends Handler implements HandlerInterface
     protected $name = 'silverstreet';
 
     /**
-     * Send SMS to a recipient.
-     *
-     * @param  string $to
-     * @param  string $message
-     * @return boolean
+     * {@inheritdoc}
      */
     public function send($to, $message)
     {
@@ -17,10 +13,7 @@ class SilverstreetHandler extends Handler implements HandlerInterface
     }
 
     /**
-     * Get delivery status.
-     *
-     * @param  string $response
-     * @return mixed
+     * {@inheritdoc}
      */
     public function delivery($response)
     {
