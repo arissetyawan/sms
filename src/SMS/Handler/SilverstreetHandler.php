@@ -2,6 +2,11 @@
 
 class SilverstreetHandler extends Handler implements HandlerInterface
 {
+    /**
+     * Handler name.
+     *
+     * @var string
+     */
     protected $name = 'silverstreet';
 
     /**
@@ -10,6 +15,8 @@ class SilverstreetHandler extends Handler implements HandlerInterface
     public function send($to, $message)
     {
         // TODO: Implement send() method.
+
+        return $this;
     }
 
     /**

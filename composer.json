@@ -23,7 +23,8 @@
 		"illuminate/support": "~4.2"
 	},
 	"require-dev": {
-		"mockery/mockery": "0.9.*"
+		"mockery/mockery": "0.9.*",
+		"illuminate/config": "~4.2"
 	},
 	"minimum-stability": "dev"
 }
