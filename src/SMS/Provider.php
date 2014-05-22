@@ -17,7 +17,7 @@ class Provider
      *
      * @param Handler\HandlerInterface  $handler
      */
-    function __construct(HandlerInterface $handler)
+    public function __construct(HandlerInterface $handler)
     {
         $this->handler = $handler;
     }
