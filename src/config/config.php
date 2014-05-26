@@ -5,7 +5,9 @@ return [
 
     'connections' => [
         'silverstreet' => [
-
+            'username' => null,
+            'password' => null,
+            'sender'   => null,
         ],
     ]
 ];
